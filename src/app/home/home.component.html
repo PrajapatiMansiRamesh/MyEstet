@@ -1,0 +1,71 @@
+<section class="search-sec">
+    <div class="container">
+       <p class="logo">my<font style="color: purple;">estët</font></p>
+        <div class="sc">
+            <a href="#">Location</a> | <a  (click)="toggleShow()">Hashtags</a> | <a href="#">Property Id</a>
+        </div>    
+                    <div class="row justify-content-center">
+                        <div class="col-lg-6 col-md-3 col-sm-10 p-0">
+                            <input type="text" id="map" class="form-control search-slt" placeholder=" Enter Landmark,Location or Project">
+                            <img src="assets/img/demo/map-marker.png" id="map-marker">
+                        </div>
+                        
+                            <!-- <button type="button" class="btn btn-danger wrn-btn">map</button> -->
+                           
+                        
+                        <div class="col-lg-2 col-md-3 col-sm-12 p-0 " *ngIf="isShown">
+                            <button type="button" class="btn btn-danger wrn-btn">Search</button>
+                        </div>
+                    </div>
+                    <div>
+                    <button class="plus" (click)=toggleDisplayDiv()><i class="fa fa-plus" aria-hidden="true"></i></button>
+                    <ul class="tags" [hidden]="isShowDiv">
+                        <li><a href="#" class="tag">Residential</a></li>
+                        <li><a href="#" class="tag">Commercial</a></li>
+                        <li><a href="#" class="tag">Future Project</a></li>
+                      </ul>
+                    </div>     
+    </div>
+
+</section>
+<br>
+<div  class="outline">
+    <div class="label"> Briskgrid Powerred Listings </div>
+<section class="pt-4 pb-5">
+<div class="row mb-8" id="slender-trigger"> 
+<div class="text-center card" *ngFor="let item of firstsec">
+<img class="rounded-circle shadow" id="slender-trigger"  [src]="item.src" width="150px" height="150px" data-toggle="tooltip" data-placement="top" data-original-title="Residential">
+<div>{{item.name}} </div>
+</div>
+</div>
+</section>
+ </div> 
+ <br>
+
+ <br>
+ <div  class="outline">
+    <div class="label"> List For Free </div>
+<div class="text-center pt-4 pb-5">
+    <div class="row mb-2" id="slender-trigger1">
+            
+<div class="text-center card" *ngFor="let item of secondsec">    
+<img class="rounded-circle shadow" id="slender-trigger1" [src]="item.src" width="150px" height="150px" data-toggle="tooltip" data-placement="top" data-original-title="Agricultural">
+<div>{{item.name}} </div>
+</div>  
+</div>
+</div>
+</div>
+<br>
+<div class="outline">
+    <div class="label"> Offer Your Bread And Breackfasts </div>
+<div class="text-center pt-4 pb-5">
+    <div class="row mb-2" id="slender-trigger2">     
+<div class="text-center card" *ngFor="let item of thirdsec">
+<img class="rounded-circle shadow" id="slender-trigger2" [src]="item.src" width="150px" height="150px" data-toggle="tooltip" data-placement="top" data-original-title="Residential Property">
+<div>{{item.name}} </div>
+</div>
+</div>
+</div>
+</div> 
+<br>
+

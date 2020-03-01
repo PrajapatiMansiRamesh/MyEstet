@@ -1,0 +1,9 @@
+.bg-black {
+    background-color: #000; }
+footer.bg-black a {
+        color: #09ebaf; }
+footer{
+   
+    position:absolute;
+    width: 100%;
+}

@@ -1,0 +1,221 @@
+.sc{
+    color: purple;
+    font-size: larger;
+    text-align: center;
+	  font-weight:bolder;
+}
+.sc>a{
+    color: #000;
+    font-size: larger; 
+    
+}
+.search-slt{
+    display: block;
+    width: 100%;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    color: #55595c;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    height: calc(3rem + 2px) !important;
+    border-radius:0;
+}
+.wrn-btn{
+    width: 100%;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: capitalize;
+    height: calc(3rem + 2px) !important;
+    border-radius:0;
+}
+
+
+@media (max-width: 992px){
+    .search-sec{
+        background: #1A4668;
+    }
+}
+.plus{
+  border-radius: 8px solid purple;
+  width: auto;
+  height: auto;
+  color: purple;
+  font-size:24px;
+  background-color: white;
+  position: relative;
+  margin-left: 5rem;
+}
+.rounded-circle {
+    width: 200px;
+  height: 200px;
+  padding:4px;
+  border-radius: 50%;
+  background: #FF6600;
+  border: 4px solid #FF6600;
+  background-clip: content-box;
+  margin:0 auto;
+}
+.rounded-circle:hover { 
+  width: 220px;
+  height:220px;
+  padding:4px;
+  border-radius: 50%;
+  background: #00cc66;
+  border: 4px solid #00cc66;
+  background-clip: content-box;
+  margin:0 auto;
+}
+#map{
+    background-image:url("F:\Realstat\src\assets\img\demo\map.jpg");
+    padding-left:40px;
+    background-size:32px;
+    background-position: left;
+    background-repeat:no-repeat;
+    
+}
+#map-marker{
+  position:absolute;
+    bottom:0px;
+    right:5px;
+    width:40px;
+    height:50px;
+}
+.detailbtn {
+  display: block;
+  width: 100%;
+  border: none;
+  background-color:purple;
+  color: white;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  display:none;
+}
+.detailbtn:hover {
+  background-color: #00cc66;
+  color:black;
+}
+.bag{
+    background:white;
+     /* #b92b27;  
+  background: -webkit-linear-gradient(to right, #b92b27, #1565c0);  
+  background: linear-gradient(to right, #b92b27, #1565c0);*/
+  font-family: Arial;
+}
+
+.text-block {
+  position: absolute;
+  bottom: 40%;
+  font-family:Georgia;
+  padding-left: 50%;
+  padding-right: 50%;
+}
+.logo{
+  text-align: center;
+  font-weight: bold;   
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 5rem;
+  font-size:10rem;
+ 
+}
+.outline {
+  margin: 0 auto;
+	min-height: 100px;
+	width:60%;
+	border: 2px solid purple;
+	position: relative;
+  border-radius:8px;
+  float:center;
+  padding:5px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  	
+}
+.outline:hover{
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+.label {
+	position: absolute;
+	top: -10px;
+	left: 20px;
+	height: 20px;
+	width: 250px;
+	background-color: white;
+	text-align: center;
+    	
+}
+
+.card {
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: 0.3s;
+  width:40%;
+  border-radius: 5px;
+  padding:5px;
+  margin: 40px;
+  
+}
+
+.card:hover {
+  box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+  border:2px solid purple;
+}
+
+/* tags for hashtag */
+.tags {
+  list-style: none;
+  margin-left: 8rem;
+  overflow: hidden; 
+  padding: 0;
+}
+
+.tags li {
+  float: left; 
+}
+
+.tag {
+  background: #FF6600;
+  border-radius: 3px 0 0 3px;
+  color: black;
+  display: inline-block;
+  height: 26px;
+  line-height: 26px;
+  padding: 0 20px 0 23px;
+  position: relative;
+  margin: 0 10px 10px 0;
+  text-decoration: none;
+  -webkit-transition: color 0.2s;
+}
+
+.tag::before {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: inset 0 1px rgba(0, 0, 0, 0.25);
+  content: '';
+  height: 6px;
+  left: 10px;
+  position: absolute;
+  width: 6px;
+  top: 10px;
+}
+
+.tag::after {
+  background: #fff;
+  border-bottom: 13px solid transparent;
+  border-left: 10px solid rgb(153, 34, 34);
+  border-top: 13px solid transparent;
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.tag:hover {
+  background-color: purple;
+  color: white;
+}
+
+.tag:hover::after {
+   border-left-color: rgb(80, 2, 80); 
+}

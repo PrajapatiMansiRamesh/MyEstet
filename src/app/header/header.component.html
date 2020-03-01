@@ -1,0 +1,100 @@
+<div class="wrapper" [@slideInOut]="animationState">
+
+<img  src="assets/img/demo/ads.png" class="divA">
+</div>
+<nav class=" navbar navbar-expand-lg navbar-dark">
+  <button (click)="toggleShowDiv('divA')" class="btn primary"> Hide Ads</button>
+    <div class="container">     
+        <a href="./index.html"><img src="assets/img/demo/logo.png" height="50%" width="60%"></a>
+        <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse collapse" id="navbarColor02">
+            <ul class="navbar-nav ml-auto d-flex align-items-center">
+            <li class="nav-item">
+                <a class="nav-link" href="./docs.html">Reserve your membership rewards</a>
+                </li>
+                <li class="nav-item">
+                <span class="nav-link" href="#">
+                <a class="nav-link" id="login" >Log in</a>
+                </span>
+                </li>
+                <li class="nav-item">
+                <div id="main" align="right">
+      <button class="openbtn" onclick="openNav()">☰</button>   
+    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div id="mySidebar" class="sidebar">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+      <a href="#">About</a>
+      <a href="#">Privacy</a>
+      <a href="#">Terms</a>
+      <a href="#">Contact Us</a>
+    </div>
+</nav>
+
+    <div class="modal">
+        <div class="content text-center">
+          <div class="close"></div>
+          <h1>Welcome</h1>
+          <p>Sign in to get personlized recommendations.</p>
+          <div class="row mb-8">
+      <div class="col text-center">
+      <img class="social-circle shadow"  src="assets/img/demo/google.png" width="80px" height="80px">
+      <div>Google </div>
+      </div>
+      <div class="col text-center">
+      <img class="social-circle shadow"  src="assets/img/demo/facebook.png" width="80px" height="80px">
+      <div>Facebook </div>
+      </div>
+      <div class="col text-center">
+      <img class="social-circle shadow"   src="assets/img/demo/twitter.png" width="80px" height="80px">
+      <div>Twitter </div>
+      </div>
+      </div>
+      <p>_____________________________ or_______________________________</p>
+      <form action="/login_page.php" style="max-width:500px;margin:auto">
+        <div class="input-container">
+          <i class="fa fa-envelope icon"></i>
+          <input class="input-field" type="text" placeholder="Email,Username" name="email">
+        </div>
+        
+        <div class="input-container">
+          <i class="fa fa-key icon"></i>
+          <input class="input-field" type="password" placeholder="Password" id="pass_log_id" name="psw">
+          <span toggle="#password-field" class="fa fa-fw fa-eye field_icon toggle-password" style="font-size:48px;color:dodgerblue"></span>
+        </div>
+        <a style="float:left;">Forgot Password?</a>
+        <button type="submit" class="logbtn">Sign In</button>
+        <br><a>Create an Account</a>
+      </form>
+          </div>
+      </div>
+      <script>
+        $(function () {
+        $('#login').click(function () {
+          $('.modal').addClass('open');
+      
+          if ($('.modal').hasClass('open')) {
+            $('.cont').addClass('blur');
+          }
+        });
+      
+        $('.close').click(function () {
+          $('.modal').removeClass('open');
+          $('.cont').removeClass('blur');
+        });
+      });
+      $(document).on('click', '.toggle-password', function() {
+    
+        $(this).toggleClass("fa-eye fa-eye-slash");
+        
+        var input = $("#pass_log_id");
+        input.attr('type') === 'password' ? input.attr('type','text') : input.attr('type','password')
+    });
+      </script>    
+   
+    
